@@ -1,7 +1,6 @@
-
 const MainContent = (props) => {
   return (
-    <main>
+    <main className="bg-gray-300 rounded-b-lg ">
       {props.posts.length == 0 ? (
         <p id="empty-post">No posts available</p>
       ) : (

@@ -3,8 +3,6 @@ import Footer from "./components/Footer";
 import MainContent from "./components/MainContent";
 import "./App.css";
 
-
-
 function App(props) {
   return (
     <>
