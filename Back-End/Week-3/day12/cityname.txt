@@ -1,0 +1,1 @@
+Current Temperature In : ' Paris  ' And weather is => 10.3, °C

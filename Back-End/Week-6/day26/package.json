@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.2.0"
+  },
+  "name": "day26",
+  "version": "1.0.0",
+  "main": "mongoDB.js",
+  "scripts": {
+    "dev": "nodemon mongoDB.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

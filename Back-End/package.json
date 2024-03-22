@@ -1,0 +1,16 @@
+{
+  "name": "ark-x",
+  "version": "1.0.0",
+  "description": "1 - git add .\r 2 - git commit -m 'text here '\r 3 - git push",
+  "main": "productManagement.js",
+  "scripts": {
+    "dev": "nodemon productManagement.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.2.0",
+    "nodemon": "^3.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "day28",
+  "version": "1.0.0",
+  "description": "",
+  "main": "productManagement.js",
+  "scripts": {
+    "dev": "nodemon productManagement.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-image: linear-gradient(to bottom, black, transparent);
+  color: #f0f3ff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+body {
+  background-image: linear-gradient(to top, #14081c, #191ba9);
+}
+.logo a {
+  margin: 0;
+  font-size: 3rem;
+  font-family: lato;
+  text-transform: uppercase;
+  color: #fefbf6;
+  text-decoration: none;
+}
+.navbar-menu {
+  justify-content: space-between;
+}
+.navbar-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  list-style: none;
+  gap: 15px;
+}
+.menu-list li a {
+  color: #fefbf6;
+  font-family: lato;
+  text-decoration: none;
+}
+.nav-off {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  padding: 13px;
+  background-image: linear-gradient(to bottom, #14081c, #191ba9);
+}
+.menu-list {
+  list-style: none;
+  margin: 0; /* Remove default margin */
+  padding: 0;
+}
+.search-form {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.search-form i {
+  margin: -30px;
+}
+.search-movie {
+  border-color: #fefbf68e;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fefbf6;
+  padding: 10px 40px;
+}
+.langu {
+  background-color: #561c24;
+  border: 0;
+  font-size: 14px;
+  font-family: lato;
+}
+/* Subscripion CSS */
+
+thead,
+tbody {
+  background-color: #211951;
+  color: #f0f3ff;
+  padding: 10px 20px;
+  border-color: #fefbf6;
+  border: 2px solid;
+}
+
+/* Pricing Table */
+.pricing-table {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Basic and Premium Sections */
+.basic-section,
+.premium-section {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.section-header {
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+.section-body {
+  margin-bottom: 20px;
+}
+
+.section-body {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin-bottom: 2em;
+}
+
+.section-footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Pricing Row */
+.pricing-row div {
+  flex: 1;
+}
+
+/* Subscription Button */
+.subscribe-btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 80px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.info-price {
+  display: flex;
+  flex-direction: column;
+}
+.header-titles-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-subscribe {
+  margin: 0;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer CSS */
+footer {
+  background-color: #14081c;
+  color: #fefbf6;
+  padding: 10px 20px;
+  position: relative; /* Relative positioning for footer anchoring */
+  margin-top: 5rem;
+}
+
+.logo2 {
+  color: #fefbf6;
+  padding-left: 40px;
+  font-family: lato;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo2:hover {
+  color: #ffd700;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.footer p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+}
+.footer a {
+  text-decoration: none;
+  color: #fefbf6;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #ffd700;
+}
+
+.app-store,
+.play-store {
+  margin-right: 1rem;
+}
+.copyright {
+  margin-top: 2rem;
+}
+
+.footer ul li:last-child {
+  margin-bottom: 0;
+}
+.footer-med {
+  width: 70%;
+  justify-content: end;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.privacy-policy {
+  text-decoration: none;
+  list-style: none;
+  color: #fefbf6;
+}
+.term-of-service {
+  text-decoration: none;
+  list-style: none;
+  color: #fefbf6;
+  margin-left: 15px;
+}
+.media ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.help {
+  text-align: center;
+}
+.last-div {
+  border-top: 0.5px solid;
+  border-color: #836fff;
+  display: flex;
+  align-items: center;
+}

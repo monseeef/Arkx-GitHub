@@ -1,0 +1,354 @@
+/* * {
+  background-color: #fefbf6;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 16px;
+}
+.imgHeader {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+body {
+  background-color: #561c24;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-image: url("./img/wallpaperflare.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+header {
+  background-image: linear-gradient(to bottom, black, transparent);
+  color: #f0f3ff;
+  width: 100%;
+}
+.logo {
+  margin: 0 30px;
+  font-size: 20px;
+}
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav-off {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  /* position: fixed;   
+  top: 0; 
+  width: 100%; */
+}
+.search-movie {
+  border-color: #fefbf68e;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fefbf6;
+  padding: 10px 40px;
+}
+.langu {
+  background-color: #561c24;
+  border: 0;
+  font-size: 14px;
+  font-family: lato;
+}
+.menu-list {
+  list-style: none;
+  margin: 0; /* Remove default margin */
+  padding: 0;
+}
+.menu-list li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: lato;
+  margin-right: 1rem;
+}
+.menu-list li:last-child {
+  margin-right: 0; /* Remove margin from the last menu item */
+}
+.menu-list li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fefbf6;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu-list li a:hover {
+  color: #ffd700;
+}
+
+footer {
+  background-color: #836fff;
+  color: #fefbf6;
+  padding: 10px 20px;
+  position: relative; /* Relative positioning for footer anchoring */
+  margin-top: 5rem;
+}
+
+.search-form {
+  padding: 0px 35px;
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+}
+.search-form i {
+  margin: -30px;
+}
+.subscribe-btn,
+.play-now {
+  background-image: linear-gradient(to right, #6d2932, #3c0303);
+  color: #fefbf6;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  margin: 20px;
+  border: 0;
+  font-weight: 10px;
+  font-family: "Passion One";
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* input[type="submit"]:hover {
+  background-color: #ed7d31;
+} */
+
+.play-now:hover {
+  background-color: #836fff;
+  color: #fefbf6;
+}
+.watch-later {
+  color: #fefbf6;
+  border-radius: 5%;
+  padding: 5px;
+  margin: 5;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica;
+}
+.watch-later:hover {
+  background-color: #07689f;
+  color: #fefbf6;
+  border-radius: 10px;
+  padding: 15px 40px;
+}
+#virg {
+  font-size: 15px;
+  color: #fefbf6;
+  font-weight: 600;
+}
+/* Main CSS */
+.genre {
+  color: #dff5ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dot {
+  font-size: 2rem;
+  padding: 0 10px;
+  color: #dff5ff;
+}
+main {
+  margin-left: 0%;
+  margin-top: 5rem; /* Adjust to make space for fixed navbar */
+}
+.border-movie {
+  background-image: linear-gradient(to top, #070a52, #af05aa);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.movie-details h1 {
+  color: #fefbf6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 80px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.movie-details li {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+}
+.movie-details h5 {
+  display: flex;
+  align-items: center;
+}
+.watchlist {
+  color: #fefbf6;
+  margin-left: 10px;
+}
+.movie-info p {
+  color: #dddddd;
+}
+.movie-info {
+  color: #dddddd;
+}
+.tv-ma {
+  border: 0;
+  border-radius: 8%;
+  background-color: gray;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+.trending-movies {
+  display: flex;
+  margin-top: 10px;
+  list-style: none;
+  justify-content: space-between;
+  overflow-x: scroll;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+h2 {
+  color: #fefbf6;
+  font-family: lato;
+}
+.movie-title {
+  text-decoration: none;
+  color: #fefbf6;
+}
+.movie-card {
+  padding-right: 30px;
+}
+.language-selector {
+  height: 2em;
+  width: 2em;
+  border: 0;
+  background-color: transparent;
+  color: beige;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Passion One";
+  margin-left: 5px;
+}
+.img-trend {
+  width: 245px;
+  height: 393.6px;
+}
+.fa-solid fa-globe {
+  color: #fefbf6;
+}
+#viewAll {
+  display: flex;
+  align-items: center;
+  margin-top: 4em;
+}
+.view-all {
+  color: #fefbf6;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  margin-left: 77%;
+  border-radius: 5%;
+}
+img {
+  border-radius: 3%;
+  scroll-snap-align: center;
+  position: relative;
+  overflow: clip;
+}
+
+/* Footer */
+footer {
+  background-color: #14081c;
+  color: #fefbf6;
+}
+.logo2 {
+  color: #fefbf6;
+  padding-left: 40px;
+  font-family: lato;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo2:hover {
+  color: #ffd700;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.footer p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+}
+.footer a {
+  text-decoration: none;
+  color: #fefbf6;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #ffd700;
+}
+
+.app-store,
+.play-store {
+  margin-right: 1rem;
+}
+.copyright {
+  margin-top: 2rem;
+}
+
+.footer ul li:last-child {
+  margin-bottom: 0;
+}
+.footer-med {
+  width: 70%;
+  justify-content: end;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.privacy-policy {
+  text-decoration: none;
+  list-style: none;
+  color: #fefbf6;
+}
+.term-of-service {
+  text-decoration: none;
+  list-style: none;
+  color: #fefbf6;
+  margin-left: 15px;
+}
+.media ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.help {
+  text-align: center;
+}
+.last-div {
+  border-top: 0.5px solid;
+  border-color: #836fff;
+  display: flex;
+  align-items: center;
+}
