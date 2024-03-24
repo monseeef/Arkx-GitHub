@@ -1,7 +1,10 @@
-import  { useState } from "react";
+import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainContent from "./components/MainContent";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+
 import "./App.css";
 
 function App() {
@@ -16,8 +19,27 @@ function App() {
       title: "Salam Post 2",
       description: "This is a sample description Updated 36.",
     },
-
   ]);
+
+  // New state for managing user authentication
+  const [user, setUser] = useState(null);
+
+  const handleLogin = (email, password) => {
+    if (email === mockUser.email && password === mockUser.password) {
+      console.log("Logging in with:", email);
+      setUser({ email });
+    } else {
+      console.error("Invalid credentials");
+    }
+  };
+
+  const handleSignUp = (email, password) => {
+    setUser({ email });
+  };
+
+  const handleLogout = () => {
+    setUser(null);
+  };
 
   const addPost = (title, description) => {
     const newPost = { id: Date.now(), title, description };
@@ -46,6 +68,19 @@ function App() {
         onEditPost={editPost}
         onDeletePost={deletePost}
       />
+      <div>
+        {!user ? (
+          <>
+            <Login onLogin={handleLogin} />
+            <Signup onSignUp={handleSignUp} />
+          </>
+        ) : (
+          <>
+            <div>Welcome, {user.email} !</div>
+            <button onClick={handleLogout}>Logout</button>
+          </>
+        )}
+      </div>
       <Footer />
     </>
   );
